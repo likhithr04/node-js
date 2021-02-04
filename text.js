@@ -7,8 +7,8 @@ var clientId = "FREE_TRIAL_ACCOUNT";
 var clientSecret = "PUBLIC_SECRET";
 
 // TODO: Specify your translation requirements here:
-var fromLang = "en";
-var toLang = "de";
+var fromLang = "en";//src lang
+var toLang = "de";//target lang u can find the lang code on google for other lang
 var text = "Let's have some fun!";
 
 var jsonPayload = JSON.stringify({
@@ -20,7 +20,7 @@ var jsonPayload = JSON.stringify({
 var options = {
     hostname: "api.whatsmate.net",
     port: 80,
-    path: "/v1/translation/translate",
+    path: "/v1/translation/translate",  //translate api used
     method: "POST",
     headers: {
         "Content-Type": "application/json",
